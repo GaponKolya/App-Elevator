@@ -58,11 +58,19 @@
     <Compile Include="application_1.Designer.cs">
       <DependentUpon>application_1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClassPeople.cs" />
     <Compile Include="CloseApp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CloseApp.Designer.cs">
       <DependentUpon>CloseApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs" />
+    <Compile Include="ElevatorVV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElevatorVV.Designer.cs">
+      <DependentUpon>ElevatorVV.cs</DependentUpon>
     </Compile>
     <Compile Include="Elevator.cs">
       <SubType>Form</SubType>
@@ -70,6 +78,7 @@
     <Compile Include="Elevator.Designer.cs">
       <DependentUpon>Elevator.cs</DependentUpon>
     </Compile>
+    <Compile Include="ElevatorClass.cs" />
     <Compile Include="Error.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +91,7 @@
     <Compile Include="Error_2.Designer.cs">
       <DependentUpon>Error_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main.cs" />
     <Compile Include="People.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,12 +106,6 @@
     <Compile Include="Parameters.Designer.cs">
       <DependentUpon>Parameters.cs</DependentUpon>
     </Compile>
-    <Compile Include="test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="test.Designer.cs">
-      <DependentUpon>test.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="application.resx">
       <DependentUpon>application.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CloseApp.resx">
       <DependentUpon>CloseApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElevatorVV.resx">
+      <DependentUpon>ElevatorVV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Elevator.resx">
       <DependentUpon>Elevator.cs</DependentUpon>
@@ -134,9 +141,6 @@
     </Compile>
     <EmbeddedResource Include="Parameters.resx">
       <DependentUpon>Parameters.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="test.resx">
-      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

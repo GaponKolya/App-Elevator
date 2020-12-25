@@ -12,6 +12,8 @@ namespace Gui_Gap
 {
     public partial class Parameters : Form
     {
+        
+        
         public Parameters()
         {
             InitializeComponent();
@@ -27,6 +29,10 @@ namespace Gui_Gap
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+
+            Data.Cpeople = (int)numericUpDown1.Value;
+            Data.Cfloor = (int)numericUpDown2.Value;
             this.Hide();
             application app = new application();
             app.Show();

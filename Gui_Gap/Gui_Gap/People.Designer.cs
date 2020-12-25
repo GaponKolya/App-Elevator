@@ -86,6 +86,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "People";
             this.Text = "Peple";
+            this.Load += new System.EventHandler(this.People_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

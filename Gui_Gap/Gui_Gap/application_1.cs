@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
+using System.Collections;
 
 namespace Gui_Gap
 {
@@ -14,8 +16,9 @@ namespace Gui_Gap
     {
         int i;
         int tk;
-        
 
+
+        
         public application_1()
         {
             InitializeComponent();
@@ -30,6 +33,8 @@ namespace Gui_Gap
             timer1.Interval = 1000;
             timer1.Enabled = true;
             timer1.Start();
+            
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -45,6 +50,7 @@ namespace Gui_Gap
             TimeSpan span = TimeSpan.FromSeconds(tk);
             string label = span.ToString(@"hh\:mm\:ss");
             label4.Text = label.ToString();
+            label5.Text = Data.potok.ToString();
         }
 
 
@@ -52,26 +58,37 @@ namespace Gui_Gap
         {
 
         }
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             Elevator ele = new Elevator();
-            
+
             ele.Show();
         }
 
-        
+
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+
+
             People people = new People();
+            people.Show();
 
-
-           
-                people.Show();
-            
         }
-    }
+
+        private void application_1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            People people = new People();
+            people.Add();
+        }
+    } 
+
+
 }
